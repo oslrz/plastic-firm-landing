@@ -12,7 +12,7 @@
           <div class="mt-6">
             <a
               href="#products"
-              class="inline-block px-6 py-3 text-white text-lg font-medium  bg-blue-600 rounded-lg hover:bg-blue-700"
+              class="inline-block px-6 py-3 text-white text-lg font-medium bg-blue-600 rounded-lg hover:bg-blue-700"
             >
               Звязатися з нами
             </a>
@@ -20,7 +20,7 @@
         </div>
         <div class="relative w-1/2 h-auto">
           <img
-            src="assets/icons/test.png"
+            :src="heroImage"
             alt="Hero image"
             class="object-cover w-full h-full mask-gradient"
           />
@@ -28,16 +28,26 @@
       </div>
     </section>
   </template>
+  
+  <script>
 
-<script>
-export default {};
-</script>
+import heroImage from '@/assets/icons/test.png';
 
-<style scoped>
-.mask-gradient {
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-}
-</style>
+  export default {
+    data() {
+      return {
+        heroImage, 
+      };
+    },
+  };
+  </script>
+  
+  <style scoped>
+  .mask-gradient {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+  }
+  </style>
+  
