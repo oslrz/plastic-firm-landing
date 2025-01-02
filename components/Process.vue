@@ -14,7 +14,7 @@
       </div>
 
       <!-- Карточки -->
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
         <!-- Карточка 1 -->
         <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
           <div class="mb-4">
@@ -50,7 +50,7 @@
         </div>
 
         <!-- Карточка 3 -->
-        <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+        <!-- <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
           <div class="mb-4">
             <img
               :src="thirdStepImage"
@@ -63,7 +63,7 @@
             Кожен етап виробництва проходить строгий контроль якості, щоб наші
             клієнти отримували лише найкращий продукт.
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

@@ -1,7 +1,7 @@
 <template>
   <section class="">
     <div
-      class="container mx-auto flex flex-row items-center py-16 px-4 sm:px-6 lg:px-8"
+      class="container mx-auto flex md:flex-row flex-col-reverse items-center py-16 px-4 sm:px-6 lg:px-8"
     >
       <div class="flex flex-col">
         <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">

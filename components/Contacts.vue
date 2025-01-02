@@ -20,18 +20,19 @@
       </div>
 
       <!-- Контакти -->
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-center">
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 text-center">
         <!-- Viber -->
         <div class="flex flex-col items-center">
           <img :src="viberIcons" alt="Viber" class="w-12 h-12 mb-4" />
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
             Viber
           </h3>
-          <p class="text-gray-600 dark:text-gray-300">+38 (099) 123-45-67</p>
+          <p class="text-gray-600 dark:text-gray-300">+38 (067) 188-38-19</p>
+          <p class="text-gray-600 dark:text-gray-300">+38 (067) 352-79-80</p>
         </div>
 
         <!-- Instagram -->
-        <div class="flex flex-col items-center">
+        <!-- <div class="flex flex-col items-center">
           <img :src="instagramIcons" alt="Instagram" class="w-12 h-12 mb-4" />
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
             Instagram
@@ -43,7 +44,7 @@
           >
             @yourprofile
           </a>
-        </div>
+        </div> -->
 
         <!-- Телефон -->
         <div class="flex flex-col items-center">
@@ -51,7 +52,8 @@
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
             Телефон
           </h3>
-          <p class="text-gray-600 dark:text-gray-300">+38 (099) 123-45-67</p>
+          <p class="text-gray-600 dark:text-gray-300">+38 (067) 188-38-19</p>
+          <p class="text-gray-600 dark:text-gray-300">+38 (067) 352-79-80</p>
         </div>
 
         <!-- Email -->
