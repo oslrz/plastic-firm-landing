@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white py-16">
+  <section class="bg-white py-8" ref="about">
     <div
       class="container mx-auto flex flex-col md:flex-row-reverse items-center lg:items-start"
     >
@@ -10,13 +10,15 @@
           Багаторічний досвід
         </h3>
         <h2 class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
-          На ринку з 2006 року
+          На ринку з 2008 року
         </h2>
         <p class="mt-4 text-lg text-gray-600">
-          Наша компанія вже понад 15 років займається виготовленням та продажем
-          плівки для упаковки, будівництва та сільського господарства. Ми
-          поєднуємо сучасні технології з відповідальним підходом, щоб
-          запропонувати клієнтам якісну продукцію за доступними цінами.
+          Наша компанія знаходиться в Мельниці-Подільські Тернопільської
+          області, та понад 17 років займається виготовленням та реалізацією
+          плівки для сільського господарства, пакування та будівництва. Якість
+          забезпечується сучасним обладнанням, завдяки чому ми можемо
+          запропонувати клієнтам якісну продукцію за доступними цінами. Доставку
+          продукції здійснюємо власним транспортом.
         </p>
       </div>
 
@@ -88,7 +90,13 @@
 </template>
 
 <script>
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";

@@ -12,12 +12,12 @@
           господарства. Надійність, доступні ціни та швидка доставка.
         </p>
         <div class="mt-6">
-          <a
-            href="#products"
+          <button
+            @click="scrollToContact"
             class="inline-block px-6 py-3 text-white text-lg font-medium bg-blue-600 rounded-lg hover:bg-blue-700"
           >
             Звязатися з нами
-          </a>
+        </button>
         </div>
       </div>
       <div class="relative w-1/2 h-auto">
@@ -35,6 +35,12 @@
 import heroImage from "@/static/icons/test.png";
 
 export default {
+  props: {
+    scrollToContact: {
+      type: Function,
+      required: true,
+    },
+  },
   data() {
     return {
       heroImage,

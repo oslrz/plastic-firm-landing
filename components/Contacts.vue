@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white dark:bg-gray-900 py-16">
+  <section class="bg-white dark:bg-gray-900 py-16" ref="contact">
     <div class="container mx-auto px-6 lg:px-8">
       <!-- Заголовок -->
       <div class="text-center mb-12">
@@ -67,10 +67,10 @@
             Email
           </h3>
           <a
-            href="mailto:info@yourcompany.com"
+            href="mailto:nyridganyan@gmail.com"
             class="text-blue-600 hover:underline"
           >
-            info@yourcompany.com
+          nyridganyan@gmail.com
           </a>
         </div>
       </div>
@@ -92,6 +92,14 @@ export default {
       phoneIcons,
       viberIcons,
     };
+  },
+  methods: {
+    scrollToContact() {
+      const contactSection = this.$refs.contact;
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    },
   },
 };
 </script>

@@ -1,10 +1,10 @@
 <template>
   <div class="h-screen flex flex-col">
-    <Header />
-    <Hero />
-    <About />
+    <Header :scrollToContact="scrollToContact" :scrollToAbout="scrollToContact" />
+    <Hero :scrollToContact="scrollToContact" />
+    <About ref="about" />
     <Process />
-    <Contacts />
+    <Contacts ref="contacts" />
     <Footer />
    
   </div>
@@ -26,6 +26,20 @@ export default {
     About,
     Process,
     Contacts,
+  },
+  methods: {
+    scrollToContact() {
+      const contactsSection = this.$refs.contacts.$el; 
+      if (contactsSection) {
+        contactsSection.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+    scrollToAbout() {
+      const aboutSection = this.$refs.about.$el; 
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      }
+    },
   },
 };
 </script>
