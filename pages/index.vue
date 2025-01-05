@@ -1,12 +1,14 @@
 <template>
   <div class="h-screen flex flex-col">
-    <Header :scrollToContact="scrollToContact" :scrollToAbout="scrollToContact" />
+    <Header
+      :scrollToContact="scrollToContact"
+      :scrollToAbout="scrollToContact"
+    />
     <Hero :scrollToContact="scrollToContact" />
     <About ref="about" />
     <Process />
     <Contacts ref="contacts" />
     <Footer />
-   
   </div>
 </template>
 
@@ -29,13 +31,13 @@ export default {
   },
   methods: {
     scrollToContact() {
-      const contactsSection = this.$refs.contacts.$el; 
+      const contactsSection = this.$refs.contacts.$el;
       if (contactsSection) {
         contactsSection.scrollIntoView({ behavior: "smooth" });
       }
     },
     scrollToAbout() {
-      const aboutSection = this.$refs.about.$el; 
+      const aboutSection = this.$refs.about.$el;
       if (aboutSection) {
         aboutSection.scrollIntoView({ behavior: "smooth" });
       }
