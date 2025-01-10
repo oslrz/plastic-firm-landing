@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-gray-50 py-16">
+  <section class="bg-gray-50 md:py-16 py-6">
     <div class="container mx-auto px-6 lg:px-8">
       <!-- Заголовок -->
       <div class="text-left mb-12">
@@ -21,7 +21,7 @@
             <img
               :src="firstStepImage"
               alt="Крок 1"
-              class="w-full h-56 object-cover rounded-lg"
+              class="w-full md:h-[300px] h-56 object-cover rounded-lg"
             />
           </div>
           <h3 class="text-lg font-semibold text-white">
@@ -39,7 +39,7 @@
             <img
               :src="secondStepImage"
               alt="Крок 2"
-              class="w-full h-56 object-cover rounded-lg"
+              class="w-full md:h-[300px] h-56 object-cover rounded-lg"
             />
           </div>
           <h3 class="text-lg font-semibold text-white">Сучасне виробництво</h3>

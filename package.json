@@ -15,7 +15,7 @@
     "@heroicons/vue": "^2.2.0",
     "@vueuse/head": "^2.0.0",
     "nuxt": "^3.14.1592",
-    "swiper": "^11.1.15",
+    "swiper": "^11.2.0",
     "vue": "latest",
     "vue-router": "latest"
   },

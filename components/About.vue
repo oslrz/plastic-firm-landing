@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white py-8" ref="about">
+  <section class="bg-white md:py-8" ref="about">
     <div
       class="container mx-auto flex flex-col md:flex-row-reverse items-center lg:items-start"
     >
@@ -22,7 +22,7 @@
         </p>
       </div>
 
-      <div class="md:w-1/2 w-full mt-8 md:mt-0 px-6 h-[300px] relative">
+      <div class="md:w-1/2 w-full mt-8 md:mt-0 px-6 md:h-[400px] h-[250px] relative">
         <swiper
           class="mySwiper h-full relative"
           :modules="activeModules"
@@ -136,8 +136,8 @@ export default {
   computed: {
     activeModules() {
       return this.isDesktop
-        ? [Navigation, Pagination, Scrollbar, A11y]
-        : [Pagination, Scrollbar, A11y];
+        ? [Navigation, Pagination, Scrollbar, A11y, Autoplay]
+        : [Pagination, Scrollbar, A11y, Autoplay];
     },
   },
   mounted() {
