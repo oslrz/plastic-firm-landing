@@ -2,7 +2,7 @@
   <div class="h-screen flex flex-col">
     <Header
       :scrollToContact="scrollToContact"
-      :scrollToAbout="scrollToContact"
+      :scrollToAbout="scrollToAbout"
     />
     <Hero :scrollToContact="scrollToContact" />
     <About ref="about" />
@@ -32,14 +32,16 @@ export default {
   methods: {
     scrollToContact() {
       const contactsSection = this.$refs.contacts.$el;
+      console.log(contactsSection)
       if (contactsSection) {
         contactsSection.scrollIntoView({ behavior: "smooth" });
       }
     },
     scrollToAbout() {
       const aboutSection = this.$refs.about.$el;
+      console.log(aboutSection)
       if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: "smooth" });
+        aboutSection.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
       }
     },
   },
