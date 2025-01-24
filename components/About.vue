@@ -83,6 +83,20 @@
               class="h-full w-full object-cover"
             />
           </swiper-slide>
+          <swiper-slide>
+            <img
+              :src="photo8"
+              alt="Photo 8"
+              class="h-full w-full object-cover"
+            />
+          </swiper-slide>
+          <swiper-slide>
+            <img
+              :src="photo9"
+              alt="Photo 9"
+              class="h-full w-full object-cover"
+            />
+          </swiper-slide>
         </swiper>
       </div>
     </div>
@@ -110,6 +124,8 @@ import photo4 from "@/static/images/photo_4.jpg";
 import photo5 from "@/static/images/photo_5.jpg";
 import photo6 from "@/static/images/photo_6.jpg";
 import photo7 from "@/static/images/photo_7.jpg";
+import photo8 from "@/static/images/photo_8.jpg";
+import photo9 from "@/static/images/photo_9.jpg";
 
 export default {
   components: {
@@ -125,6 +141,8 @@ export default {
       photo5,
       photo6,
       photo7,
+      photo8,
+      photo9,
       isDesktop: true,
     };
   },
