@@ -20,43 +20,27 @@
             />
           </div>
           <h3 class="text-lg font-semibold text-white">
-            Вибір якісної сировини
+            Вибір сировини
           </h3>
           <p class="mt-2 text-gray-300">
-            Для виробництва плівки ми використовуємо  якісну  сировину з європи
+            Для виробництва плівки ми використовуємо якісну сировину з Європи.
           </p>
         </div>
 
         <!-- Карточка 2 -->
         <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
           <div class="mb-4">
-            <img
-              :src="secondStepImage"
-              alt="Крок 2"
-              class="w-full md:h-[300px] h-56 object-cover rounded-lg"
-            />
+            <video
+  src="/video/manufacture_video.MP4"
+  controls
+  class="w-full md:h-[300px] h-56 object-cover rounded-lg"
+></video>
           </div>
           <h3 class="text-lg font-semibold text-white">Сучасне виробництво</h3>
           <p class="mt-2 text-gray-300">
-            Використання сучасного  обладнання для  виготовлення плівки дозволяє отримати якісну продукцію.
+            Використання сучасного обладнання для виготовлення плівки дозволяє отримати якісну продукцію.
           </p>
         </div>
-
-        <!-- Карточка 3 -->
-        <!-- <div class="bg-gray-800 rounded-lg shadow-lg p-6 text-center">
-          <div class="mb-4">
-            <img
-              :src="thirdStepImage"
-              alt="Крок 3"
-              class="w-full h-56 object-cover rounded-lg"
-            />
-          </div>
-          <h3 class="text-lg font-semibold text-white">Контроль якості</h3>
-          <p class="mt-2 text-gray-300">
-            Кожен етап виробництва проходить строгий контроль якості, щоб наші
-            клієнти отримували лише найкращий продукт.
-          </p>
-        </div> -->
       </div>
     </div>
   </section>
@@ -64,15 +48,12 @@
 
 <script>
 import firstStepImage from "@/static/images/step-1-image.jpg";
-import secondStepImage from "@/static/images/step-2-image.jpg";
-import thirdStepImage from "@/static/images/step-3-image.jpg";
 
 export default {
   data() {
     return {
       firstStepImage,
-      secondStepImage,
-      thirdStepImage,
+      videoSrc: "/static/manufacture_video.MP4",
     };
   },
 };
